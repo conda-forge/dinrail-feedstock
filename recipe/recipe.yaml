@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 recipe:
   name: dinrail-split
@@ -9,10 +9,10 @@ recipe:
 
 source:
   url: https://github.com/gbionics/dinrail/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 183c14c5013e9dde7ebffc416c00734a915286f721cab9ae591cbca3f3685a1f
+  sha256: da3b78ae28fc5c84f4fef6ce372d0ea69e63b46e95c4d5b62314a04231335e29
 
 build:
-  number: 1
+  number: 0
 
 # For what regards run_exports, we use x.x as that is the project policy,
 # see https://github.com/gbionics/dinrail#versioning-policy .
