@@ -17,7 +17,7 @@ cxx_compiler_version:
 fmt:
 - '12.1'
 libyarp:
-- 3.12.2
+- 3.12.3
 macos_machine:
 - x86_64-apple-darwin13.4.0
 spdlog:

@@ -15,7 +15,7 @@ docker_image:
 fmt:
 - '12.1'
 libyarp:
-- 3.12.2
+- 3.12.3
 spdlog:
 - '1.17'
 target_platform:

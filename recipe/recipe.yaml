@@ -12,7 +12,7 @@ source:
   sha256: 183c14c5013e9dde7ebffc416c00734a915286f721cab9ae591cbca3f3685a1f
 
 build:
-  number: 0
+  number: 1
 
 # For what regards run_exports, we use x.x as that is the project policy,
 # see https://github.com/gbionics/dinrail#versioning-policy .
@@ -23,7 +23,7 @@ outputs:
   - package:
       name: libdinrail
     build:
-      number: 0
+      number: 1
       script:
         file: build-libdinrail
     requirements:
@@ -58,7 +58,7 @@ outputs:
   - package:
       name: dinrail-devices
     build:
-      number: 0
+      number: 1
       script:
         file: build-dinrail-devices
     requirements:
@@ -95,7 +95,7 @@ outputs:
   - package:
       name: dinrail-tools
     build:
-      number: 0
+      number: 1
       script:
         file: build-dinrail-tools
     requirements:
@@ -144,7 +144,7 @@ outputs:
   - package:
       name: libdinrail-yarp
     build:
-      number: 0
+      number: 1
       script:
         file: build-libdinrail-yarp
     requirements:
@@ -182,7 +182,7 @@ outputs:
   - package:
       name: dinrail-yarp-devices
     build:
-      number: 0
+      number: 1
       script:
         file: build-dinrail-yarp-devices
     requirements:
@@ -219,7 +219,7 @@ outputs:
   - package:
       name: dinrail-yarp-tools
     build:
-      number: 0
+      number: 1
       script:
         file: build-dinrail-yarp-tools
     requirements:
