@@ -23,7 +23,6 @@ outputs:
   - package:
       name: libdinrail
     build:
-      number: 1
       script:
         file: build-libdinrail
     requirements:
@@ -58,7 +57,6 @@ outputs:
   - package:
       name: dinrail-devices
     build:
-      number: 1
       script:
         file: build-dinrail-devices
     requirements:
@@ -95,7 +93,6 @@ outputs:
   - package:
       name: dinrail-tools
     build:
-      number: 1
       script:
         file: build-dinrail-tools
     requirements:
@@ -144,7 +141,6 @@ outputs:
   - package:
       name: libdinrail-yarp
     build:
-      number: 1
       script:
         file: build-libdinrail-yarp
     requirements:
@@ -182,7 +178,6 @@ outputs:
   - package:
       name: dinrail-yarp-devices
     build:
-      number: 1
       script:
         file: build-dinrail-yarp-devices
     requirements:
@@ -219,7 +214,6 @@ outputs:
   - package:
       name: dinrail-yarp-tools
     build:
-      number: 1
       script:
         file: build-dinrail-yarp-tools
     requirements:
