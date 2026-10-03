@@ -193,11 +193,16 @@ outputs:
       host:
         - ${{ pin_subpackage('libdinrail', upper_bound='x.x.x') }}
         - ${{ pin_subpackage('libdinrail-yarp', upper_bound='x.x.x') }}
+        - ${{ pin_subpackage('dinrail-devices', upper_bound='x.x.x') }}
         - libyarp
         - fmt
         - spdlog
         - ycm-cmake-modules
         - libsharedlibpp
+      run:
+        # Several devices in  dinrail-yarp-devices are wrappers of
+        # dinrail devices in dinrail-devices, so we need to run depend on it
+        - ${{ pin_subpackage('dinrail-devices', upper_bound='x.x.x') }}
     tests:
       - package_contents:
           files:
