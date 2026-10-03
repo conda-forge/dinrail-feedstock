@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 
 recipe:
   name: dinrail-split
@@ -9,7 +9,7 @@ recipe:
 
 source:
   url: https://github.com/gbionics/dinrail/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: da3b78ae28fc5c84f4fef6ce372d0ea69e63b46e95c4d5b62314a04231335e29
+  sha256: c83afef28ac1b29755f7881eeeb06185d060ce6311f16bf65dda5fcd677a9e28
 
 build:
   number: 0
@@ -193,11 +193,16 @@ outputs:
       host:
         - ${{ pin_subpackage('libdinrail', upper_bound='x.x.x') }}
         - ${{ pin_subpackage('libdinrail-yarp', upper_bound='x.x.x') }}
+        - ${{ pin_subpackage('dinrail-devices', upper_bound='x.x.x') }}
         - libyarp
         - fmt
         - spdlog
         - ycm-cmake-modules
         - libsharedlibpp
+      run:
+        # Several devices in  dinrail-yarp-devices are wrappers of
+        # dinrail devices in dinrail-devices, so we need to run depend on it
+        - ${{ pin_subpackage('dinrail-devices', upper_bound='x.x.x') }}
     tests:
       - package_contents:
           files:
