@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.0"
+  version: "0.3.1"
 
 recipe:
   name: dinrail-split
@@ -9,7 +9,7 @@ recipe:
 
 source:
   url: https://github.com/gbionics/dinrail/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: c83afef28ac1b29755f7881eeeb06185d060ce6311f16bf65dda5fcd677a9e28
+  sha256: 6e08f76e66ca0bc3adb9705aa392f9e95e12e918910f93b2307b8cd080f5b308
 
 build:
   number: 0
